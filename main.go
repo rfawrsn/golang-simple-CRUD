@@ -65,7 +65,6 @@ func main() {
 	r.POST("/api/register", registerUser)
 	r.POST("/api/login", loginUser)
 
-	// API routes group
 	api := r.Group("/api")
 	api.Use(authMiddleware())
 	{
