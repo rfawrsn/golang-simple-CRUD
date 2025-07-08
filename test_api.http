@@ -1,0 +1,49 @@
+### Health Check
+GET http://localhost:3000/health
+
+### Get All Users
+GET http://localhost:3000/api/users
+
+### Get User by ID
+GET http://localhost:3000/api/users/1
+
+### Create New User
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "name": "Alice Johnson",
+    "email": "alice@example.com"
+}
+
+### Create Another User
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "name": "Bob Wilson",
+    "email": "bob@example.com"
+}
+
+### Update User
+PUT http://localhost:3000/api/users/1
+Content-Type: application/json
+
+{
+    "name": "John Updated",
+    "email": "john.updated@example.com"
+}
+
+### Update User (partial)
+PUT http://localhost:3000/api/users/2
+Content-Type: application/json
+
+{
+    "name": "Jane Updated"
+}
+
+### Delete User
+DELETE http://localhost:3000/api/users/3
+
+### Get All Users (after operations)
+GET http://localhost:3000/api/users 
